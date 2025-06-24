@@ -3,11 +3,14 @@ name = "prompt-handler"
 version = "0.0.1.dev1"
 description = "Utilities for loading and rendering prompt templates."
 authors = [
-   {name = "VLMHyperBenchTeam", email = "contact@vlmhyperbench.team"},
    {name = "Anton Shiryaev", email = "med.phisiker@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.10"
+
+[project.urls]
+Repository = "https://github.com/VLMHyperBenchTeam/prompt_handler"
+Homepage = "https://github.com/VLMHyperBenchTeam"
 
 [tool.setuptools.packages.find]
 where = ["prompt_handler"]
