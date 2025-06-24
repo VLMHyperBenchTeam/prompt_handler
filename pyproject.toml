@@ -1,6 +1,6 @@
 [project]
 name = "prompt-handler"
-version = "0.0.1dev0"
+version = "0.0.1.dev1"
 description = "Utilities for loading and rendering prompt templates."
 authors = [
    {name = "VLMHyperBenchTeam", email = "contact@vlmhyperbench.team"},
