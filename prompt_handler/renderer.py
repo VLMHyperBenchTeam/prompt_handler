@@ -26,4 +26,4 @@ def render_prompt(template: str, /, **kwargs: Any) -> str:
         return template.format(**kwargs)
     except KeyError as exc:
         missing = exc.args[0]
-        raise ValueError(f"Отсутствует значение для плейсхолдера '{missing}'") from exc 
+        raise ValueError(f"Отсутствует значение для плейсхолдера '{missing}'") from exc
