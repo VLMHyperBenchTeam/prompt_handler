@@ -5,12 +5,11 @@
 Ранее находилась в корне пакета, перенесена для единообразия структуры.
 """
 from pathlib import Path
-from typing import Union
 
 __all__ = ["load_prompt"]
 
 
-def load_prompt(prompt_path: Union[str, Path], *, encoding: str = "utf-8") -> str:
+def load_prompt(prompt_path: str | Path, *, encoding: str = "utf-8") -> str:
     """Загружает промпт из файла.
 
     Args:
@@ -42,4 +41,4 @@ def load_prompt(prompt_path: Union[str, Path], *, encoding: str = "utf-8") -> st
     try:
         return prompt_path.read_text(encoding=encoding)
     except OSError as exc:
-        raise OSError(f"Не удалось прочитать файл промпта {prompt_path}: {exc}") from exc 
+        raise OSError(f"Не удалось прочитать файл промпта {prompt_path}: {exc}") from exc
